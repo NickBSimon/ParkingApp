@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lotbackground"
+    tools:context=".goldStreetLot">
+
+    <Button
+        android:id="@+id/slot16"
+        android:layout_width="144.5dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#4CAF50"
+        android:alpha="0.75"
+        app:layout_constraintBottom_toTopOf="@+id/slot12"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/slot15"
+        android:layout_width="84.5dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/black"
+        android:alpha="0.75"
+        app:layout_constraintBottom_toTopOf="@+id/slot10"
+        app:layout_constraintStart_toEndOf="@+id/slot14" />
+
+    <Button
+        android:id="@+id/slot14"
+        android:layout_width="84dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/black"
+        android:alpha="0.75"
+        app:layout_constraintBottom_toTopOf="@+id/slot9"
+        app:layout_constraintStart_toEndOf="@+id/slot13" />
+
+    <Button
+        android:id="@+id/slot13"
+        android:layout_width="84dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:alpha="0.75"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/slot8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/slot12"
+        android:layout_width="144.5dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:alpha="0.75"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/slot11"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/slot11"
+        android:layout_width="144.5dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:alpha="0.75"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/slot7"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/slot10"
+        android:layout_width="84.5dp"
+        android:alpha="0.75"
+        android:layout_height="148dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/slot5"
+        app:layout_constraintStart_toEndOf="@+id/slot9" />
+
+    <Button
+        android:id="@+id/slot9"
+        android:layout_width="84dp"
+        android:layout_height="148dp"
+        android:alpha="0.75"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/slot4"
+        app:layout_constraintStart_toEndOf="@+id/slot8" />
+
+    <Button
+        android:id="@+id/slot8"
+        android:layout_width="84dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:alpha="0.75"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/slot3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/slot7"
+        android:layout_width="144.5dp"
+        android:layout_height="85dp"
+        android:alpha="0.75"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/slot6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/slot6"
+        android:layout_width="144.5dp"
+        android:layout_height="85dp"
+        android:alpha="0.75"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/slot5"
+        android:layout_width="84.5dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="1dp"
+        android:alpha="0.75"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/slot2"
+        app:layout_constraintStart_toEndOf="@+id/slot4" />
+
+    <Button
+        android:id="@+id/slot4"
+        android:layout_width="84dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="1dp"
+        android:alpha="0.75"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/slot1"
+        app:layout_constraintStart_toEndOf="@+id/slot3" />
+
+    <Button
+        android:id="@+id/slot3"
+        android:layout_width="84dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="5dp"
+        android:alpha="0.75"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/slot0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/slot2"
+        android:layout_width="83.7dp"
+        android:alpha="0.75"
+        android:layout_height="148dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slot1" />
+
+    <Button
+        android:id="@+id/slot1"
+        android:layout_width="83.7dp"
+        android:alpha="0.75"
+        android:layout_height="148dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slot0" />
+
+    <Button
+        android:id="@+id/slot0"
+        android:layout_width="83.7dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="5dp"
+        android:alpha="0.75"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#FFEB3B"
+        android:layout_marginTop="16dp"
+        android:text="Gold Street Parking Lot"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEB3B"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Vacancy:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/vacancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEB3B"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEB3B"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:text="Available Short Term:"
+        app:layout_constraintStart_toEndOf="@+id/vacancy"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/conditionalSpots"
+        android:layout_width="wrap_content"
+        android:textColor="#FFEB3B"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="37dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/darkmodeicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
