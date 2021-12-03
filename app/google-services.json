@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106360169390",
+    "project_id": "auth-a0ca9",
+    "storage_bucket": "auth-a0ca9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106360169390:android:ef22510216ab8039d15e3f",
+        "android_client_info": {
+          "package_name": "com.example.lotslot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106360169390-ohko00oc6oeophnqchp3vplos7e7em59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrQVv7GBmF7R_NClc8mKdswk3ozQmeuEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106360169390-ohko00oc6oeophnqchp3vplos7e7em59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
