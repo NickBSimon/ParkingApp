@@ -1,0 +1,4 @@
+Attached is the current .apk executable for the parking lot app I created. The app is mostly self explanatory, for now it is preprogrammed to be in a parking lot called gold street lot.
+After registering a user you can log in and it will bring you to the user home page, from there you can see the lot under your lots. Simply click the lot to view it and click
+a spot to see more info on it. You can reserve and car spot thats green, if it is orange you can reserve the spot only if youre checkout time is before the spot you will block.
+It should mostly be self explanatory.
