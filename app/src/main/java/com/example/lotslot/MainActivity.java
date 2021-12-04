@@ -17,10 +17,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
 
-    private TextView register;
+    private TextView register, forgotPassword;
     private EditText _email, _password;
     private Button _signIn;
 
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         progressBar = (ProgressBar) findViewById(R.id.signInProgBar);
 
         mAuth = FirebaseAuth.getInstance();
+
+        forgotPassword = (TextView) findViewById(R.id.forgotPassword);
+        forgotPassword.setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +57,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 break;
             case R.id.signIn:
                 userLogin();
+                break;
+            case R.id.forgotPassword:
+                startActivity(new Intent(this, ForgotPassword.class));
                 break;
         }
     }
@@ -87,10 +94,20 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    startActivity(new Intent(MainActivity.this, homeActivity.class));
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    if(user.isEmailVerified()) {
+                        startActivity(new Intent(MainActivity.this, homeActivity.class));
+                        progressBar.setVisibility(View.GONE);
+                    }
+                    else{
+                        user.sendEmailVerification();
+                        Toast.makeText(MainActivity.this, "Email has not been verified, please verify and try again", Toast.LENGTH_LONG).show();
+                        progressBar.setVisibility(View.GONE);
+                    }
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Invalid login credentials", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Invalid login credentials, please try again", Toast.LENGTH_LONG).show();
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });
