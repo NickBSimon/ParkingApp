@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".goldStreetLot">
+
+        <Button
+            android:id="@+id/slot16"
+            android:layout_width="144.5dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toEndOf="@+id/slot15"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot15"
+            android:layout_width="84.5dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toEndOf="@+id/slot14"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot14"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toEndOf="@+id/slot13"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot13"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot12"
+            android:layout_width="144.5dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toEndOf="@+id/slot15"
+            app:layout_constraintTop_toBottomOf="@+id/slot16"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot11"
+            android:layout_width="144.5dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toEndOf="@+id/slot10"
+            app:layout_constraintTop_toBottomOf="@+id/slot12"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot10"
+            android:layout_width="84.5dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toEndOf="@+id/slot9"
+            app:layout_constraintTop_toBottomOf="@+id/slot15"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot9"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toEndOf="@+id/slot8"
+            app:layout_constraintTop_toBottomOf="@+id/slot14"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot8"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slot13"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot7"
+            android:layout_width="144.5dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toEndOf="@+id/slot10"
+            app:layout_constraintTop_toBottomOf="@+id/slot11"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot6"
+            android:layout_width="144.5dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toEndOf="@+id/slot5"
+            app:layout_constraintTop_toBottomOf="@+id/slot7"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot5"
+            android:layout_width="84.5dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toEndOf="@+id/slot4"
+            app:layout_constraintTop_toBottomOf="@+id/slot10"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot4"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toEndOf="@+id/slot3"
+            app:layout_constraintTop_toBottomOf="@+id/slot9"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot3"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#535353"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slot8"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot2"
+            android:layout_width="84.5dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toEndOf="@+id/slot1"
+            app:layout_constraintTop_toBottomOf="@+id/slot5"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot1"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toEndOf="@+id/slot0"
+            app:layout_constraintTop_toBottomOf="@+id/slot4"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/slot0"
+            android:layout_width="84dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slot3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:text="Gold Street Parking Lot"
+            android:textColor="#FFEB3B"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Vacancy:"
+            android:textColor="#FFEB3B"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/vacancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFEB3B"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:text="Available Short Term:"
+            android:textColor="#FFEB3B"
+            app:layout_constraintStart_toEndOf="@+id/vacancy"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/conditionalSpots"
+            android:layout_width="wrap_content"
+            android:textColor="#FFEB3B"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/helpButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/questionmarkbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

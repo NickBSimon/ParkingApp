@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LotSlot</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help_text">Spaces are color-coded to indicate whether or not they are available. If a space is green it\'s open for use. If a space is red it is currently occupied, and you can click on it for more information. If a space is yellow it is available only if
+    you set a checkout time that won\'t conflict with an occupied slot the selected slot will block.</string>
 </resources>

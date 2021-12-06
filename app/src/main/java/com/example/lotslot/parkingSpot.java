@@ -8,8 +8,7 @@ public class parkingSpot{
     int constraints[];
     /*
     Parking spots have a state to represent the availability of the spot. 0 means closed,
-    1 means open, 2 means open for set amount of time, 3 means taken, 4 means unavailable until more
-    spots fill up
+    1 means open, 2 means open for set amount of time, 3 means taken
      */
 
     public parkingSpot(){
