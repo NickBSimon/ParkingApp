@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                     if(user.isEmailVerified()) {
                         startActivity(new Intent(MainActivity.this, lotActivity.class));
                         progressBar.setVisibility(View.GONE);
+                        finish();
                     }
                     else{
                         user.sendEmailVerification();

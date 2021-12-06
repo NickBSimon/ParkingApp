@@ -1,58 +1,46 @@
 package com.example.lotslot;
 
 public class parkingSpot{
-    vehicle parkedCar;
-    private String beginParkDate;
-    private String endParkDate;
+    private String begin;
+    private String end;
     int state;
-    int constraints[];
     /*
     Parking spots have a state to represent the availability of the spot. 0 means closed,
     1 means open, 2 means open for set amount of time, 3 means taken
      */
 
     public parkingSpot(){
-        beginParkDate = null;
-        endParkDate = null;
-        parkedCar = null;
-        constraints = null;
-        state = 1;
+        begin = null;
+        end = null;
+        state = 0;
     }
 
-    public parkingSpot(int _constraints[]){
-        beginParkDate = null;
-        endParkDate = null;
-        parkedCar = null;
-        state = 4;
-        constraints = _constraints;
+    public parkingSpot(String _begin, String _end, int _state){
+        begin = _begin;
+        end = _end;
+        state = _state;
     }
 
-    public vehicle getParkedCar() {
-        return parkedCar;
-    }
 
     public String getBeginParkDate() {
-        return beginParkDate;
+        return begin;
     }
 
     public String getEndParkDate() {
-        return endParkDate;
+        return end;
     }
 
     public int getState() {
         return state;
     }
 
-    public void setParkedCar(vehicle parkedCar) {
-        this.parkedCar = parkedCar;
-    }
 
     public void setBeginParkDate(String beginParkDate) {
-        this.beginParkDate = beginParkDate;
+        this.begin = beginParkDate;
     }
 
     public void setEndParkDate(String endParkDate) {
-        this.endParkDate = endParkDate;
+        this.end = endParkDate;
     }
 
     public void setState(int state) {

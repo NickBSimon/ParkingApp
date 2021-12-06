@@ -3,6 +3,7 @@ package com.example.lotslot;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -60,6 +61,8 @@ public class ForgotPassword extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(ForgotPassword.this, "An email has been sent.", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(ForgotPassword.this, MainActivity.class));
+                    finish();
                 }
                 else{
                     Toast.makeText(ForgotPassword.this, "Invalid email address.", Toast.LENGTH_LONG).show();
