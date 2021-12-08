@@ -98,7 +98,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b0.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b0.setBackgroundColor(Color.parseColor("FF0000"));
+                        b0.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(1).getState()){
@@ -112,7 +112,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b1.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b1.setBackgroundColor(Color.parseColor("FF0000"));
+                        b1.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(2).getState()){
@@ -126,7 +126,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b10.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b10.setBackgroundColor(Color.parseColor("FF0000"));
+                        b10.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(3).getState()){
@@ -140,7 +140,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b11.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b11.setBackgroundColor(Color.parseColor("FF0000"));
+                        b11.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(4).getState()){
@@ -154,7 +154,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b12.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b12.setBackgroundColor(Color.parseColor("FF0000"));
+                        b12.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(5).getState()){
@@ -168,7 +168,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b13.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b13.setBackgroundColor(Color.parseColor("FF0000"));
+                        b13.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(6).getState()){
@@ -182,7 +182,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b14.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b14.setBackgroundColor(Color.parseColor("FF0000"));
+                        b14.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(7).getState()){
@@ -196,7 +196,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b15.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b15.setBackgroundColor(Color.parseColor("FF0000"));
+                        b15.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(8).getState()){
@@ -210,7 +210,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b16.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b16.setBackgroundColor(Color.parseColor("FF0000"));
+                        b16.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(9).getState()){
@@ -224,7 +224,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b2.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b2.setBackgroundColor(Color.parseColor("FF0000"));
+                        b2.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(10).getState()){
@@ -238,7 +238,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b3.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b3.setBackgroundColor(Color.parseColor("FF0000"));
+                        b3.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(11).getState()){
@@ -252,7 +252,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b4.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b4.setBackgroundColor(Color.parseColor("FF0000"));
+                        b4.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(12).getState()){
@@ -266,7 +266,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b5.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b5.setBackgroundColor(Color.parseColor("FF0000"));
+                        b5.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(13).getState()){
@@ -280,7 +280,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b6.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b6.setBackgroundColor(Color.parseColor("FF0000"));
+                        b6.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(14).getState()){
@@ -294,7 +294,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b7.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b7.setBackgroundColor(Color.parseColor("FF0000"));
+                        b7.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(15).getState()){
@@ -308,7 +308,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b8.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b8.setBackgroundColor(Color.parseColor("FF0000"));
+                        b8.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 switch(list.get(16).getState()){
@@ -322,7 +322,7 @@ public class fragment1 extends Fragment implements View.OnClickListener {
                         b9.setBackgroundColor(Color.parseColor("#FFEB3B"));
                         break;
                     case 3:
-                        b9.setBackgroundColor(Color.parseColor("FF0000"));
+                        b9.setBackgroundColor(Color.parseColor("#FF0000"));
                         break;
                 }
                 int vacancyCount = 0;
@@ -354,38 +354,72 @@ public class fragment1 extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.slot0:
+                SpotFragment spot0Fragment = new SpotFragment(0);
+                spot0Fragment.show(getParentFragmentManager(), "Spot0 fragment");
                 break;
             case R.id.slot1:
+                SpotFragment spot1Fragment = new SpotFragment(1);
+                spot1Fragment.show(getParentFragmentManager(), "Spot1 fragment");
                 break;
             case R.id.slot2:
+                SpotFragment spot2Fragment = new SpotFragment(2);
+                spot2Fragment.show(getParentFragmentManager(), "Spot2 fragment");
                 break;
             case R.id.slot3:
+                SpotFragment spot3Fragment = new SpotFragment(3);
+                spot3Fragment.show(getParentFragmentManager(), "Spot3 fragment");
                 break;
             case R.id.slot4:
+                SpotFragment spot4Fragment = new SpotFragment(4);
+                spot4Fragment.show(getParentFragmentManager(), "Spot4 fragment");
                 break;
             case R.id.slot5:
+                SpotFragment spot5Fragment = new SpotFragment(5);
+                spot5Fragment.show(getParentFragmentManager(), "Spot5 fragment");
                 break;
             case R.id.slot6:
+                SpotFragment spot6Fragment = new SpotFragment(6);
+                spot6Fragment.show(getParentFragmentManager(), "Spot6 fragment");
                 break;
             case R.id.slot7:
+                SpotFragment spot7Fragment = new SpotFragment(7);
+                spot7Fragment.show(getParentFragmentManager(), "Spot7 fragment");
                 break;
             case R.id.slot8:
+                SpotFragment spot8Fragment = new SpotFragment(8);
+                spot8Fragment.show(getParentFragmentManager(), "Spot8 fragment");
                 break;
             case R.id.slot9:
+                SpotFragment spot9Fragment = new SpotFragment(9);
+                spot9Fragment.show(getParentFragmentManager(), "Spot9 fragment");
                 break;
             case R.id.slot10:
+                SpotFragment spot10Fragment = new SpotFragment(10);
+                spot10Fragment.show(getParentFragmentManager(), "Spot10 fragment");
                 break;
             case R.id.slot11:
+                SpotFragment spot11Fragment = new SpotFragment(11);
+                spot11Fragment.show(getParentFragmentManager(), "Spot11 fragment");
                 break;
             case R.id.slot12:
+                SpotFragment spot12Fragment = new SpotFragment(12);
+                spot12Fragment.show(getParentFragmentManager(), "Spot12 fragment");
                 break;
             case R.id.slot13:
+                SpotFragment spot13Fragment = new SpotFragment(13);
+                spot13Fragment.show(getParentFragmentManager(), "Spot13 fragment");
                 break;
             case R.id.slot14:
+                SpotFragment spot14Fragment = new SpotFragment(14);
+                spot14Fragment.show(getParentFragmentManager(), "Spot14 fragment");
                 break;
             case R.id.slot15:
+                SpotFragment spot15Fragment = new SpotFragment(15);
+                spot15Fragment.show(getParentFragmentManager(), "Spot15 fragment");
                 break;
             case R.id.slot16:
+                SpotFragment spot16Fragment = new SpotFragment(16);
+                spot16Fragment.show(getParentFragmentManager(), "Spot16 fragment");
                 break;
             case R.id.helpButton:
                 HelpFragment helpFragment = new HelpFragment();
