@@ -46,7 +46,7 @@ public class fragment3 extends Fragment implements View.OnClickListener{
         userID = user.getUid();
         final TextView userNameTextView = (TextView) view.findViewById(R.id.profileName);
         final TextView userEmailTextView = (TextView) view.findViewById(R.id.profileEmail);
-
+        final TextView userOccupy = (TextView) view.findViewById(R.id.profileOccupy);
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -54,9 +54,15 @@ public class fragment3 extends Fragment implements View.OnClickListener{
                 if(userProfile != null){
                     String fullName = userProfile.username;
                     String email = userProfile.email;
-
+                    String occupying = String.valueOf(userProfile.occupying + 1);
                     userNameTextView.setText(fullName);
                     userEmailTextView.setText(email);
+                    if(userProfile.occupying != -1){
+                        userOccupy.setText("Currently occupying slot " + occupying);
+                    }
+                    else{
+                        userOccupy.setText("No spots claimed.");
+                    }
                 }
             }
 

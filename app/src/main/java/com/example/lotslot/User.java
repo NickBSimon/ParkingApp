@@ -4,6 +4,8 @@ public class User {
 
     public String email, username, password;
 
+    int occupying;
+
     public User(){
 
 
@@ -13,5 +15,6 @@ public class User {
         this.email = email;
         this.password = password;
         this.username = username;
+        occupying = -1;
     }
 }
