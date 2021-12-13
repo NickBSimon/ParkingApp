@@ -100,7 +100,7 @@ public class SpotFragment  extends DialogFragment implements View.OnClickListene
                             textViewNote.setText("Note from user: " + list0.get(2));
                         }
                         if(list0.get(3) != null){
-                            if(Integer.parseInt(list0.get(3)) == 1 && occupying == -1){
+                            if(Integer.parseInt(list0.get(3)) == 1){
                                 note.setVisibility(View.GONE);
                                 endTime.setVisibility(View.GONE);
                                 endDate.setVisibility(View.GONE);
@@ -108,13 +108,13 @@ public class SpotFragment  extends DialogFragment implements View.OnClickListene
                                 reserve.setVisibility(View.VISIBLE);
                                 leaveSpot.setVisibility(View.GONE);
                             }
-                            else if(Integer.parseInt(list0.get(3)) == 3 && occupying != 0){
+                            else if(Integer.parseInt(list0.get(3)) == 3){
                                 note.setVisibility(View.VISIBLE);
                                 sendNote.setVisibility(View.VISIBLE);
                                 reserve.setVisibility(View.GONE);
                                 leaveSpot.setVisibility(View.GONE);
                             }
-                            else if(Integer.parseInt(list0.get(3)) == 3 && occupying == 0){
+                            else if(Integer.parseInt(list0.get(3)) == 3){
                                 note.setVisibility(View.GONE);
                                 sendNote.setVisibility(View.GONE);
                                 reserve.setVisibility(View.GONE);
@@ -907,16 +907,18 @@ public class SpotFragment  extends DialogFragment implements View.OnClickListene
 
     @Override
     public void onClick(View view1) {
+        HashMap hashMap;
+        DatabaseReference lotReference;
         switch (view1.getId()){
             case R.id.leaveSpotButton:
                 switch(slotNum){
                     case 0:
-                        HashMap hashMap = new HashMap();
+                        hashMap = new HashMap();
                         hashMap.put("state", (long) 1);
                         hashMap.put("end_date", "none");
                         hashMap.put("end_time", "none");
                         hashMap.put("note", "none");
-                        DatabaseReference lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
                         lotReference.child("slot0").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
                         hashMap = new HashMap();
                         hashMap.put("state", (long) 0);
@@ -926,10 +928,275 @@ public class SpotFragment  extends DialogFragment implements View.OnClickListene
                         reference.child(userID).updateChildren(hashMap);
                         occupying = -1;
                         break;
+                    case 1:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot1").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot4").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 2:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot2").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot5").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 3:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot3").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot8").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 4:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot4").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot9").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 5:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot5").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot10").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 6:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot6").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot5").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 7:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot7").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot5").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot10").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 8:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot8").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot13").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 9:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot9").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot14").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 10:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot10").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot15").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 11:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot11").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot10").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 12:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot12").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot10").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot15").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
+                    case 13:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot13").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        occupying = -1;
+                        break;
+                    case 14:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot14").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        occupying = -1;
+                        break;
+                    case 15:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot15").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        occupying = -1;
+                        break;
+                    case 16:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 1);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot16").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Left spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 0);
+                        lotReference.child("slot15").updateChildren(hashMap);
+                        hashMap = new HashMap();
+                        hashMap.put("occupying", -1);
+                        reference.child(userID).updateChildren(hashMap);
+                        occupying = -1;
+                        break;
                 }
-
                 break;
             case R.id.reserveButton:
+                switch(slotNum){
+                    case 0:
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 3);
+                        hashMap.put("end_date", "none");
+                        hashMap.put("end_time", "none");
+                        hashMap.put("note", "none");
+                        lotReference = FirebaseDatabase.getInstance().getReference().child("goldstreet");
+                        lotReference.child("slot0").updateChildren(hashMap).addOnSuccessListener(o -> Toast.makeText(getActivity(), "Reserved spot", Toast.LENGTH_LONG).show());
+                        hashMap = new HashMap();
+                        hashMap.put("state", (long) 2);
+                        lotReference.child("slot3").updateChildren(hashMap);
+                        break;
+                }
                 break;
         }
     }
